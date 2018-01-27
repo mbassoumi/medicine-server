@@ -1,0 +1,34 @@
+runtime: php
+env: flex
+
+runtime_config:
+  document_root: public
+
+# Ensure we skip ".env", which is only for local development
+skip_files:
+  - .env
+
+env_variables:
+  # Put production environment variables here.
+  APP_LOG: errorlog
+  APP_DEBUG: true
+  APP_KEY: base64:k/Mfz9rjpgL9YHzXBe8KzSNO3eZyaX9Dkl1yu5XiZZI=
+  STORAGE_DIR: /tmp
+  CACHE_DRIVER: file
+  SESSION_DRIVER: file
+  ## Set these environment variables according to your CloudSQL configuration.
+  DB_HOST: localhost
+  DB_DATABASE: medicine
+  DB_PORT: 3306
+  DB_USERNAME: root
+  DB_PASSWORD:
+  DB_SOCKET: "/cloudsql/medicine-reader:us-central1:medicine"
+
+
+beta_settings:
+  cloud_sql_instances: "medicine-reader:us-central1:medicine"
+      # for Cloud SQL, set this value to the Cloud SQL connection name,
+      # e.g. "project:region:cloudsql-instance"
+
+
+
