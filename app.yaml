@@ -17,7 +17,8 @@ env_variables:
   CACHE_DRIVER: file
   SESSION_DRIVER: file
   ## Set these environment variables according to your CloudSQL configuration.
-  DB_HOST: localhost
+  DB_CONNECTION: mysql
+  DB_HOST: 104.197.165.157
   DB_DATABASE: medicine
   DB_PORT: 3306
   DB_USERNAME: majd
