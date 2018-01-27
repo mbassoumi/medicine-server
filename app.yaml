@@ -20,8 +20,8 @@ env_variables:
   DB_HOST: localhost
   DB_DATABASE: medicine
   DB_PORT: 3306
-  DB_USERNAME: root
-  DB_PASSWORD:
+  DB_USERNAME: majd
+  DB_PASSWORD: majdbb18
   DB_SOCKET: "/cloudsql/medicine-reader:us-central1:medicine"
 
 
